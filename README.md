@@ -91,6 +91,14 @@ Note: Enabling this feature is something of a judgment call. If enabled, passwor
 
 When prompted, confirm installation by typing Y, and then ENTER to series of question regarding removal of anonymous user and test database.
 
+![alt text](Image/val-password.png)
+
+
+![alt text](Image/password-removal.png)
+
+
+![alt text](Image/password-done.png)
+
 
 ### Step 3 — Installing PHP
 
@@ -110,7 +118,7 @@ php -v
 
 Output
 
-diag
+![alt text](Image/php-v.png)
 
 
 LEMP stack is now fully operational, but before testing the setup with a PHP script, it’s best to set up a proper nginx Virtual Host to hold your website’s files and folders.
@@ -190,6 +198,9 @@ If you get the output below, you are good to go
 ``nginx: the configuration file /etc/nginx/nginx.conf syntax is ok nginx: configuration file /etc/nginx/nginx.conf test is successful
 ``
 
+![alt text](Image/nginx.conf-syntaxsuccesful.png)
+
+
 * Reload Nginx so these changes take effect:
 
 ```
@@ -223,7 +234,7 @@ sudo vi /var/www/lemp/index.html
 http://server_domain_or_IP
 ```
 
-diag
+![alt text](Image/hello-world.png)
 
 
 ### Step 5 — Testing PHP with Nginx
@@ -251,7 +262,7 @@ To test this script, go to your web browser and access your server’s domain na
 http://server_domain_or_IP/info.php
 ```
 
-diag
+![alt text](Image/info-php.png)
 
 
 Conclusion:
